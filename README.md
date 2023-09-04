@@ -1,4 +1,4 @@
-# Backend Starter
+# Frontend Starter
 
 It is an frontend starter consisting of the following tools:
 
