@@ -1,2 +1,8 @@
-# frontend
-It is a frontend starter created using my favorite frontend toolset.
+# Backend Starter
+
+It is an frontend starter consisting of the following tools:
+
+- ReactJS
+- TypeScript
+- TailwindCSS
+- Redux
