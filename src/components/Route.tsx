@@ -1,14 +1,18 @@
-import { Navigate, Route, RouteProps } from "react-router-dom";
+import { Navigate } from "react-router-dom";
 import { useGlobalState } from "../redux/slices/global";
 
-export const PrivateRoute: React.FC<RouteProps> = (props) => {
-  const { user } = useGlobalState();
-  if (!user) return <Navigate to="/login" />;
-  return <Route {...props} />;
+type Props = {
+  component: any;
 };
 
-export const PublicRoute: React.FC<RouteProps> = (props) => {
+export const PrivateRoute: React.FC<Props> = (props) => {
+  const { user } = useGlobalState();
+  if (!user) return <Navigate to="/auth/login" />;
+  return props.component;
+};
+
+export const PublicRoute: React.FC<Props> = (props) => {
   const { user } = useGlobalState();
   if (user) return <Navigate to="/home" />;
-  return <Route {...props} />;
+  return props.component;
 };
