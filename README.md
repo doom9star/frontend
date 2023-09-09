@@ -2,8 +2,14 @@
 
 It is an frontend starter consisting of the following tools:
 
-- ReactJS (Library)
-- TypeScript (Scripting Language)
-- TailwindCSS (CSS Styling)
-- Redux (State Management)
-- Antd (UI Components)
+### STACK
+
+- TypeScript &nbsp;|&nbsp; Language
+- ReactJS &nbsp;|&nbsp; Framework
+- TailwindCSS &nbsp;|&nbsp; Styling
+- Redux &nbsp;|&nbsp; State Management
+- Antd &nbsp;|&nbsp; UI Library
+
+### FEATURE
+
+- Authentication/Authorization
