@@ -4,6 +4,7 @@ import Login from "./Login";
 import Register from "./Register";
 import ResetPassword from "./ResetPassword";
 import ForgotPassword from "./ForgotPassword";
+import ActivateAccount from "./ActivateAccount";
 
 export default function AuthRouter() {
   return (
@@ -13,6 +14,7 @@ export default function AuthRouter() {
         <Route path="register" element={<Register />} />
         <Route path="forgot-password" element={<ForgotPassword />} />
         <Route path="reset-password" element={<ResetPassword />} />
+        <Route path="activate-account/:tid" element={<ActivateAccount />} />
         <Route path="*" element={<Navigate to={"login"} replace />} />
       </Route>
     </Routes>
